@@ -1,0 +1,16 @@
+* java.lang.Math; this has Math.pow(double a,double b) method, which returns a^b in double, further we want means we can
+    change data type to int by-> (int)Math.pow(double a,double b)
+* java.io.PrintStream; has System.out.printf() method which can used similar to C's printf
+* java.util.Scanner; has sc.hasNext() method which returns boolean data type(true or false) by checking whether any
+    string is given in input or not
+* java.util.*; by adding star to the end we are just adding all things present in util class, some more are
+    java.util.Arrays;
+    java.util.Calendar;// mainly used for detecting day when date is given
+    java.util.List;
+    java.util.Scanner;
+    java.util.Random;
+*Random is a class using which create a object called random and then use it to get random values example
+    int option=random.nextInt(9); here 9 is a upper bound
+* java.lang.Math;  -> has Math.PI which returns a long value of PI for our calculation.
+    to calculate the area of the circle: Math.PI*radius*radius
+* to access a particular character in a string we use, string_name.charAt(index);
