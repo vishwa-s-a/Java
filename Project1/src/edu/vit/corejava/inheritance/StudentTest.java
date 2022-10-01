@@ -1,6 +1,7 @@
 package edu.vit.corejava.inheritance;
 import jdk.swing.interop.SwingInterOpUtils;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.time.LocalDate;
 class Person{
@@ -85,6 +86,14 @@ public class StudentTest {
 
         Student student1=new Student("ram",LocalDate.of(2021,10,12),"21bce0029","bce");
         System.out.println(student1.toString());
+        System.out.println("***********************array list concept*******************");
+        ArrayList<Student> btech=new ArrayList<Student>();
+        btech.add(student);
+        btech.add(student1);
+        for(Student i:btech)
+        {
+            System.out.println(i.toString());
+        }
 
     }
 }
