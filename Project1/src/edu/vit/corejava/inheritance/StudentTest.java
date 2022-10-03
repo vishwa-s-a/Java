@@ -51,7 +51,7 @@ class Student extends Person{
     {
         this.regNumber=regNumber;
     }
-    public void setDegree(String Degree)
+    public void setDegree(String degree)
     {
         this.degree=degree;
     }
@@ -71,6 +71,14 @@ class Student extends Person{
     {
         return "Student[name: %s Dob: %s regNumber: %s degree: %s ]".formatted(super.getName(),getDob(),this.regNumber,this.degree);
     }
+    /*
+    instead we can also use this toString() method
+    @Override
+    public String toString()
+    {
+        return (super.toString()+"\n register number: "+this.regNumber+" degree: "+this.degree;
+    }
+     */
 }
 public class StudentTest {
     public static void main(String[] args)
