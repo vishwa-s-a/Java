@@ -1,44 +1,29 @@
 /**
- * to demonstrate the use of try and catch
+ * to demonstrate the use of try and catch.
+ * to catch array index out of bound exception
  */
 package edu.vit.corejava.exceptionHandling;
 
 import java.util.Scanner;
 
 public class BasicException {
-    public static int addition(int a,int b)
-    {
-        return a+b;
-    }
-    public static double division(int a, int b)
-    {
-        return a/b;
-    }
-    public static int subtraction(int a, int b)
-    {
-        return a-b;
-    }
-    public static int multiply(int a, int b)
-    {
-        return a*b;
-    }
+    
     public static void main(String[] args) {
-        int a, b;
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the integer values a and b: "); 
-        a=sc.nextInt();
-        b=sc.nextInt();
-        System.out.println("addition: "+addition(a,b));
+        int num[]=new int[5];
+        num[0]=1;
+        num[1]=2;
+        num[2]=3;
+        System.out.println("Enter the array index to be found: ");
+        int ind=sc.nextInt();
         try{
-            System.out.println("division: "+division(a,b));
+            System.out.println("The element at the index specified is: "+num[ind]);
         }
-        catch(ArithmeticException ae)
+        catch(ArrayIndexOutOfBoundsException aie)
         {
-            System.out.println(ae.toString());
-            System.out.println("Infinity!!");
-        }       
-        System.out.println("subtraction: "+subtraction(a,b));       
-        System.out.println("multiplication: "+multiply(a,b));       
+            System.out.println(aie.toString());
+        }
+               
 
     }
     

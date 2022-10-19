@@ -27,12 +27,13 @@ public class BasicException2 {
             sc =new Scanner(System.in);
             a=sc.nextInt();
             b=sc.nextInt();
-            System.out.println("Addition: "+addition(a, b));
-            System.out.println("Multiplication: "+multiply(a, b));
             System.out.println("Division : "+division(a, b));
         }
+        //if try block is executed successfully without any error then catch block will not be
+        // executed(compiler just skips the catch block)
         catch(InputMismatchException | ArithmeticException e)
         {
+            a=10;b=20;
             System.out.println(e.toString());
         }
         /* 
@@ -52,6 +53,8 @@ public class BasicException2 {
             
             sc.close();
         }
+        System.out.println("Addition: "+addition(a, b));
+        System.out.println("Multiplication: "+multiply(a, b));
         
 
     }
