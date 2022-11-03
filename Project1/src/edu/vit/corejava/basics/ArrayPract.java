@@ -20,13 +20,14 @@ public class ArrayPract {
         {
             array1[i]=sc.nextInt();
         }
-
+        
         // now using ArrayList method
         ArrayList<Integer>iValues=new ArrayList<Integer>();
         iValues.add(33);
         iValues.add(30);
         iValues.add(12);
         iValues.add(6);
+        iValues.remove(0);
         Collections.sort(iValues);
         for(int i=0;i<iValues.size();i++)
         {

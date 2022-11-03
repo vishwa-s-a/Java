@@ -3,6 +3,7 @@ import java.util.*;
 // this is hacker rank problem
 // topic static initializer block
 public class StaticInitializer {
+    // at first this static block is executed and then goes to main block
     // instance field
     static int B,H;
     static boolean flag=true;// as these are static variables they can be only accessed by static methods only
@@ -24,7 +25,7 @@ public class StaticInitializer {
     public static void main(String[] args){
         if(flag)
         {
-            int area=B*H;
+            int area=B*H;// both static variables belong to same class so we dont have to use class name to access the static variables
             System.out.println(area);
         }
         }
