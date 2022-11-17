@@ -6,8 +6,18 @@ package edu.vit.corejava.inheritance;
  *   2.Sealed interface
  *   3.functional interface
  */
-interface Transaction //directly we can write like this instead of interface class Transaction
+// here we have to give the name as interface Transaction without using class;
+// and we can only use some keywords such as: public, static, final while declaring properties of the interface
+interface Transaction
 {
+    /*
+     * various methods of declaring properties in interface only is
+     * public static int count=12;
+     * publlic final int name=13;
+     * // if we dont initialise these variables then we get error
+     * // example public static int count;//this would throw error and ask you to initialize its value
+     * while accessing count we cannot use this.count instead only use count or Class_name.count
+     */
     public final Integer minCredit=16;
     public Boolean deposit(Double amount);
     public Boolean transfer(SavingsAccount toAccount,Double amount);
