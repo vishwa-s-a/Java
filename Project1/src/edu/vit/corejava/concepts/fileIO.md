@@ -3,7 +3,7 @@
 * FileReader
 * BufferedReader
 * InputStreamReader
-* FileWrite
+* FileWriter
 * FileNotFoundException
 * MalformedURLException
 * IOException

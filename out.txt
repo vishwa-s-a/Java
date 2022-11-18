@@ -1,3 +1,13 @@
 My name is Vishwa, this is me
 My name is Vishwa, this is me
 My name is Vishwa, this is me
+Name: vishwa
+Address:
+Door Number: #12/A nilaya
+Area: darga
+Landmark: tippu circle
+Place: ilkal
+District and State:bagalkot and karnataka
+Pincode: 12345
+Date of Birth: 2022-12-12
+Courses: [Course name: java, Faculty name: Anthoniraj, Credits: 3.500000]
