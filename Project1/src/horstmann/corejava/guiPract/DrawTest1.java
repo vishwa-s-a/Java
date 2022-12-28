@@ -2,6 +2,18 @@ package horstmann.corejava.guiPract;
 import java.awt.*;
 import java.awt.geom.*;
 import javax.swing.*;
+public class DrawTest1{
+    public static void main(String args[]) {
+        EventQueue.invokeLater(()->
+        {
+            var frame=new DrawFrame();
+            frame.setTitle("shapes");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setVisible(true);
+        });
+    }
+    
+}
 class DrawFrame extends JFrame{
     public DrawFrame()
     {
@@ -32,21 +44,19 @@ class DrawComponent extends JComponent{
         //draw a diagonal line 
 
         g2.draw(new Line2D.Double(leftX,topY,leftX+width,topY+height));
+
+        // draw a circle with same center
+
+        double centerX=rect.getCenterX();
+        double centerY=rect.getCenterY();
+        double radius=150;
+
+        var circle=new Ellipse2D.Double();
+        circle.setFrameFromCenter(centerX, centerY,centerX+radius,centerY+radius);
+        g2.draw(circle);
     }
     public Dimension getPreferredSize()
     {
         return new Dimension(default_Width,default_Height);
     }
-}
-public class DrawTest {
-    public static void main(String[] args) {
-        EventQueue.invokeLater(()->
-        {
-            var frame=new DrawFrame();
-            frame.setTitle("shapes");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setVisible(true);
-        });
-    }
-    
 }
